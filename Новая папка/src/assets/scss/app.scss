@@ -1,0 +1,16 @@
+//Bootstrap styles
+@import "variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+//Custom mixins
+@import "mixins/mixins";
+
+//Custom settings --
+@import "settings";
+
+//Component specific styles 
+@import "components/callout";
+@import "pages/home";
+@import "pages/footer";
+@import "pages/news";
+@import "pages/navigation";

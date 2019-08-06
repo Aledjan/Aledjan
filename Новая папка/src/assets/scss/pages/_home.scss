@@ -1,0 +1,34 @@
+/* sample file */
+div{
+  //border: 1px solid red;
+  //div{
+  //  border: 1px solid green;
+  //
+  //}
+}
+.post-news{
+  //border: 1px solid red;
+  a{
+    display: block;
+  }
+  &:nth-child(2n-1) .wrap_news{
+    margin-left: 13px;
+  }
+  &:nth-child(2n) .wrap_news{
+    margin-right: 13px;
+  }
+  @include media-breakpoint-down(md){
+    &:nth-child(2n-1) .wrap_news{
+      margin-left: 0;
+    }
+    &:nth-child(2n) .wrap_news{
+      margin-right: 0;
+    }
+  }
+  .wrap_news{
+    border: 1px solid #dadada;
+    .img{
+      border-bottom: 1px solid #dadada;
+    }
+  }
+}
